@@ -1,0 +1,355 @@
+
+
+body {
+    font-size: 16px;
+    height: 100%;
+    width: 100vw;
+    font-family: Avenir Next;
+    background-color: #101010;
+    color: white;
+    font-weight: 100;
+}
+
+.navbar {
+    background-color: #1B1B1B;
+    font-weight: 400 !important;
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: 300;
+    margin-top: 3rem;
+    font-size: 40px;
+}
+
+.top-header {
+    margin-top: 90px;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.white-header {
+    color: white;
+}
+
+.multicolor-header {
+    /*making a gradient to apply to text*/
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #AE4C23), color-stop(0.15, #AE9723), color-stop(0.6, #79BEB9), color-stop(0.8, #53A0FD), color-stop(1.0, #ECE151));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.subhead {
+    width: 100%;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.text-container {
+    position: relative;
+    border: solid white;
+    margin-top: -28px;
+    margin-bottom: 7vh;
+}
+
+.intro-text-container {
+    width: 500px;
+    float: right;
+    margin-right: 10vw;
+}
+
+.harold {
+    width: 300px;
+    margin: auto;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.bigger {
+    width: 400px;
+}
+
+.dynamic-size-brain {
+    width: 330px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.icon-container {
+    position: relative;
+    width: 65vw;
+    margin: 0 auto;
+}
+
+
+.gradient-line {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #AE4C23), color-stop(0.15, #AE9723), color-stop(0.6, #79BEB9), color-stop(0.8, #53A0FD), color-stop(1.0, #ECE151));
+}
+
+p {
+    margin-top: 12px;
+}
+
+.overview-container {
+    clear: both;
+    font-size: 14px;
+    max-width: 400px;
+    border: 1px solid white;
+    padding: 20px;
+   }
+
+.custom-width {
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: 14px;
+}
+
+section {
+    padding: 60px;
+}
+
+.bottom-click {
+    position: relative;
+    margin-top: 8vh;
+}
+
+.view-all-button {
+    background-color: #F8E71C;
+    font-weight: 400;
+    width: 225px;
+    height: 50px;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    cursor: pointer;
+}
+
+
+.image2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.newpadding {
+    padding-top: 0px;
+}
+
+.body-part-label {
+    font-weight: bold;
+    color: #F8E71C;
+    padding-bottom: 5px;
+}
+
+.info-box {
+    border: 1px solid white;
+    padding: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.info-box2 {
+    border: 1px solid white;
+    padding: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.position-1 {
+    top: 14%;
+}
+
+.position-2 {
+    top: 60%;
+}
+
+.position-3 {
+    top: 14%;
+    right: 0%;
+}
+
+.position-4 {
+    top: 60%;
+    right: 0%;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+.body-highlights {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.brain-highlights {
+    opacity: .3;
+    cursor: pointer;
+}
+
+.heavy {
+    font-weight: bold;
+    color: white;
+}
+
+.number-style {
+    font-family: Arial Black;
+    font-weight: 400;
+    font-size: 3em;
+    color: #4A90E2;
+}
+
+.carousel-inner {
+    background-color: #1B1B1B;
+}
+
+.quote-container {
+    height: 100%;
+    padding: 5vw;
+}
+
+.carousel-item {
+    font-family: Courier New;
+    font-size: 1em;
+    font-weight: 100;
+    width: 70%;
+}
+
+.caption {
+    font-size: 1em;
+}
+
+.chart-container {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    clear: none;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+}
+
+.blue-color {
+    color: #4A90E2;
+}
+
+.red-color {
+    color: #C94958;
+    font-weight: bold;
+}
+
+.green-color {
+    color: #B8E986;
+}
+
+.mobile-description,
+.mobile-description-placeholder {
+    display: none;
+}
+
+.orange-color {
+    color: #F5A623
+}
+
+.white-color {
+    color: white;
+}
+
+
+/*when screen is mobile-sized and it becomes hard to hover over body/brian parts due to Fitt's Law, get rid of hover functionality and "view all" button, display all highlights, and move all descriptions below image.*/
+@media only screen and (max-width: 576px) {
+    .highlight-description {
+        display: none; /*//removing descriptions so that only labels are displayed on the image*/
+    }
+    .brain-highlights,
+    .body-highlights {
+        opacity: 1 !important;  /*display all highlights */
+        pointer-events: none;
+    }
+    .info-box2,
+    .info-box {
+        opacity: 1 !important;
+        font-size: 13px;
+    }
+    #amyg-box {
+        top: 37%;
+        left: 25%;
+    }
+    #prefrontal-box {
+        top: 10%;
+    }
+    .view-all-button {
+        display: none;
+    }
+    .mobile-description {
+        display: block;
+        position: relative;
+    }
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 14px;
+    font-family: Avenir Next;
+    font-style: italic;
+    margin-top: 14px;
+}
+
+section {
+    padding: 20px;
+}
+
+
+/*media queries */
+@media only screen and (min-width: 576.1px) and (max-width: 767.98px) {
+    .carousel-indicators {
+        display: none;
+    }
+    .info-box2,
+    .info-box {
+        width: 25vw;
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (min-width: 767.97px) {
+    .info-box2,
+    .info-box {
+        width: 240px;
+    }
+}
+
+
+}
