@@ -1,0 +1,316 @@
+    body {
+    font-size: 16px;
+    height: 100%;
+    font-family: Avenir Next;
+    background-color: #101010;
+    background-position: 0px 100px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.navbar {
+    background-color: #1B1B1B;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 5vw;
+}
+
+h2 {
+    font-weight: regular;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.margin {
+    margin-top: 60px;
+}
+
+.white-header {
+    color: white;
+}
+
+.multicolor-header {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #AE4C23), color-stop(0.15, #AE9723), color-stop(0.6, #79BEB9), color-stop(0.8, #53A0FD), color-stop(1.0, #ECE151));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.subhead {
+    width: 100%;
+    /* line breaks? I don't want only one word on line below.*/
+}
+
+.navbar-nav {
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.text-container {
+    position: relative;
+    margin-top: -10vw;
+    font-size: 14px;
+    font-weight: 100;
+    /*    margin-bottom: 2vw;
+*/
+    /*    left: 10vw;
+    width: 30vw;*/
+}
+
+.harold {
+    width: 300px;
+    margin-left: 10vw;
+}
+
+.dynamic-size-brain {
+    width: 240px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.icon {
+    max-width: 180px;
+    max-height: 270px;
+}
+
+.heavy {
+    font-weight: bold;
+    color: white;
+}
+
+.icon-link {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.gradient-line {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    height: 1px;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #AE4C23), color-stop(0.15, #AE9723), color-stop(0.6, #79BEB9), color-stop(0.8, #53A0FD), color-stop(1.0, #ECE151));
+}
+
+p {
+    margin-top: 12px;
+}
+
+.colored {
+    opacity: 0;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+.description {
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 0%;
+    bottom: 50%;
+    /*bottom: 5vw;
+   left: ;*/
+}
+
+.closer {
+    right: 30%;
+}
+
+.description-text {
+    opacity: 0;
+}
+
+.lowered-margin {
+    margin-bottom: 1vw;
+}
+
+.col-md-3 {}
+
+.footer {
+    height: 50px;
+}
+
+
+/* ==============================================================================================
+CSS for star twinkling. Source:
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(33, 33, 33, 0.9);
+    color: #ffffff;
+    display: block;
+    font: 14px/1.3 Arial, sans-serif;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+header h2 {
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+
+header a,
+a:visited {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.stars,
+.twinkling,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #101010 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: -2;
+    opacity: .5;
+}
+
+.twinkling {
+    background: transparent url("twinkling.png") repeat top center;
+    z-index: -1;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
+}
+
+
+/*media queries   */
+
+@media only screen and (max-width: 767.98px) {
+    p {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    .gradient-line {
+        width: 49vw;
+    }
+    .harold {
+        width: 30vw;
+    }
+    .text-container {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .icon-link {
+        height: 20%;
+    }
+    .icon {
+        margin-top: 5px;
+    }
+    @media only screen and (max-width: 400px) {
+        p {
+            font-size: 10px;
+        }
+    }
