@@ -5,12 +5,20 @@ var off2 = true;
 
 $(function() {
 
-var brainHeight = $(".icon-image2").height();
+
+    //resize the row height dynamically so that it always matches the height of the icon within (before, the height was much larger than the icon, which made for wasted space).
+    var brainHeight = $(".icon-image2").height();
     $(".manage-row-height2").css("height", brainHeight);
+
+    var bodyHeight = $(".icon-image").height();
+    $(".manage-row-height").css("height", bodyHeight);
+
     $(window).on('resize',function(){
-        var brainHeight = $(".icon-image2").height();
+         var bodyHeight = $(".icon-image").height();
+         $(".manage-row-height").css("height", bodyHeight);
+         var brainHeight = $(".icon-image2").height();
          $(".manage-row-height2").css("height", brainHeight);
-        });
+    });
 
     // resizing carosel dynamically so it's height is as large as the largest quote within. This way, all information is always displayed and carosel remains a consistent size between slides that fits content perfectly.
     var maxHeight = $("#longest").height();
@@ -21,13 +29,7 @@ var brainHeight = $(".icon-image2").height();
         $(".carousel-item").css("height", maxHeight); //make the height of all carousel items match that of the longest
     });
 
-    //resize the row height dynamically so that it always matches the height of the icon within (before, the height was much larger than the icon, which made for wasted space).
-    var bodyHeight = $(".icon-image").height();
-    $(".manage-row-height").css("height", bodyHeight);
-    $(window).on('resize',function(){
-         var bodyHeight = $(".icon-image").height();
-         $(".manage-row-height").css("height", bodyHeight);
-    });
+
 
 
 
