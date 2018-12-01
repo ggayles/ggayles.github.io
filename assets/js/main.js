@@ -19,13 +19,15 @@ $(function() {
     var bodyHeight = $(".icon-image").height();
     $(".manage-row-height").css("height", bodyHeight);
     $(window).on('resize',function(){
-         bodyHeight = $(".icon-image").height();
+         var bodyHeight = $(".icon-image").height();
          $(".manage-row-height").css("height", bodyHeight);
     });
+
+
     var brainHeight = $(".icon-image2").height();
     $(".manage-row-height2").css("height", brainHeight);
     $(window).on('resize',function(){
-         brainHeight = $(".icon-image2").height();
+        var brainHeight = $(".icon-image2").height();
          $(".manage-row-height2").css("height", brainHeight);
         });
 
