@@ -5,6 +5,12 @@ var off2 = true;
 
 $(function() {
 
+var brainHeight = $(".icon-image2").height();
+    $(".manage-row-height2").css("height", brainHeight);
+    $(window).on('resize',function(){
+        var brainHeight = $(".icon-image2").height();
+         $(".manage-row-height2").css("height", brainHeight);
+        });
 
     // resizing carosel dynamically so it's height is as large as the largest quote within. This way, all information is always displayed and carosel remains a consistent size between slides that fits content perfectly.
     var maxHeight = $("#longest").height();
@@ -24,12 +30,7 @@ $(function() {
     });
 
 
-    var brainHeight = $(".icon-image2").height();
-    $(".manage-row-height2").css("height", brainHeight);
-    $(window).on('resize',function(){
-        var brainHeight = $(".icon-image2").height();
-         $(".manage-row-height2").css("height", brainHeight);
-        });
+
 
 
 
