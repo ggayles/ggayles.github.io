@@ -146,6 +146,12 @@ section {
     cursor: pointer;
 }
 
+.image1 {
+    position: relative;
+    margin: 0 auto;
+    opacity: 0;
+}
+
 
 .image2 {
     position: absolute;
