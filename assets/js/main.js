@@ -7,8 +7,18 @@ $(function() {
 
 
     //resize the row height dynamically so that it always matches the height of the icon within (before, the height was much larger than the icon, which made for wasted space).
-    var brainHeight = $(".icon-image2").height();
+
+
+$(".icon-image2").on('load', function() {
+     var brainHeight = $(".icon-image2").height();
     $(".manage-row-height2").css("height", brainHeight);
+     $(window).on('resize',function(){
+             var brainHeight = $(".icon-image2").height();
+         $(".manage-row-height2").css("height", brainHeight);
+        });
+
+
+});
 
     var bodyHeight = $(".icon-image").height();
     $(".manage-row-height").css("height", bodyHeight);
@@ -16,8 +26,7 @@ $(function() {
     $(window).on('resize',function(){
          var bodyHeight = $(".icon-image").height();
          $(".manage-row-height").css("height", bodyHeight);
-         var brainHeight = $(".icon-image2").height();
-         $(".manage-row-height2").css("height", brainHeight);
+
     });
 
     // resizing carosel dynamically so it's height is as large as the largest quote within. This way, all information is always displayed and carosel remains a consistent size between slides that fits content perfectly.
