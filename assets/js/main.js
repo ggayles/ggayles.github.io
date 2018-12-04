@@ -37,6 +37,7 @@ $(function() {
 
 
 
+
     // when hover over icons on home page, fill icon with color and display descriptive text below
         $(".icon-link").mouseover(
             function() {
