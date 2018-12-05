@@ -6,27 +6,44 @@ var off2 = true;
 $(function() {
 
 
-    //resize the row height dynamically so that it always matches the height of the icon within (before, the height was much larger than the icon, which made for wasted space).
+    //resize the row height dynamically so that it always matches the height of the icon within (before, the height was much larger than the icon when it shrunk, which made for wasted space).
 
-
-$(".icon-image2").on('load', function() {
      var brainHeight = $(".icon-image2").height();
-    $(".manage-row-height2").css("height", brainHeight);
-     $(window).on('resize',function(){
-             var brainHeight = $(".icon-image2").height();
-         $(".manage-row-height2").css("height", brainHeight);
-        });
-
-
-});
+        $(".manage-row-height2").css("height", brainHeight);
+         $(window).on('resize',function(){
+                 var brainHeight = $(".icon-image2").height();
+             $(".manage-row-height2").css("height", brainHeight);
+            });
 
     var bodyHeight = $(".icon-image").height();
-    $(".manage-row-height").css("height", bodyHeight);
+        $(".manage-row-height").css("height", bodyHeight);
+        $(window).on('resize',function(){
+                 var bodyHeight = $(".icon-image").height();
+                 $(".manage-row-height").css("height", bodyHeight);
+                  });
 
-    $(window).on('resize',function(){
-         var bodyHeight = $(".icon-image").height();
-         $(".manage-row-height").css("height", bodyHeight);
 
+
+    //these two functions are because sometimes height renders before image loads, which leaves row height at zero. However, these functions alone are not enough because if image is saved in cache then on load won't work.
+    $(".icon-image2").on('load', function() {
+         var brainHeight = $(".icon-image2").height();
+        $(".manage-row-height2").css("height", brainHeight);
+         $(window).on('resize',function(){
+                 var brainHeight = $(".icon-image2").height();
+             $(".manage-row-height2").css("height", brainHeight);
+            });
+          });
+
+
+    $(".icon-image").on('load', function() {
+        var bodyHeight = $(".icon-image").height();
+        $(".manage-row-height").css("height", bodyHeight);
+
+        $(window).on('resize',function(){
+             var bodyHeight = $(".icon-image").height();
+             $(".manage-row-height").css("height", bodyHeight);
+
+        });
     });
 
     // resizing carosel dynamically so it's height is as large as the largest quote within. This way, all information is always displayed and carosel remains a consistent size between slides that fits content perfectly.
