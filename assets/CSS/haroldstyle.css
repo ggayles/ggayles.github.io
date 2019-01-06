@@ -15,7 +15,7 @@
 
 h1 {
     font-size: 60px;
-    margin-top: 5vw;
+    margin-top: 4vw;
 }
 
 h2 {
@@ -138,18 +138,17 @@ p {
     margin-bottom: 1vw;
 }
 
-.col-md-3 {}
 
 .footer {
-    height: 50px;
+    height: 100px;
 }
 
 
-/* ==============================================================================================
+/*
 CSS for star twinkling. Source:
 https://sed.am
 https://mkrtchyan.ga
-================================================================================================= */
+ */
 
 * {
     margin: 0;
